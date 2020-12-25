@@ -16,6 +16,8 @@
 html{
 	color: #000;
 	font-size: 16px;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
 	/*font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;*/
 	/*font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
@@ -23,7 +25,7 @@ html{
 	line-height: 2;
 }
 a{
-	color:#000 ;
+	color: #000;
 	display: block;
 }
 #wrapper{
@@ -43,6 +45,7 @@ section,
 	margin: 0 auto;
 }
 .container{
+	max-width: 1280px;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -56,13 +59,13 @@ section,
 	margin: 0 auto;
 	max-width: 960px;
 }
-@media screen and (min-width:1540px) {
+/* @media screen and (min-width:1540px) {
 	.l_container{max-width: 1680px;}
 	.container{max-width: 1480px;}
-}
+} */
 @media screen and (min-width:1280px) and ( max-width:1539px) {
 	html{font-size: 15px;}
-	.container{max-width: 1280px;}
+	/* .container{max-width: 1280px;} */
 }
 @media screen and (min-width:768px) and ( max-width:1279px) {
 	html{font-size: 14px;}
@@ -84,6 +87,11 @@ section,
 	--twitter: #1DA1F2;
 	--line: #00B900;
 	--youtube: #DA1725;
+	--brown01: #DBCBA6;
+	--brown02: #D0B174;
+	--brown03: #B09538;
+	--brown04: #946C2B;
+	--brown05: #5D3B00;
 }
 .objectCover {
 	width:100%;
@@ -109,11 +117,205 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+main{
+	margin-top: 5rem;
+}
+.sorts_mill_goudy{
+	font-family: 'Sorts Mill Goudy', serif;
+}
+.ttl_wrap{
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.ttl_wrap p{
+	font-size: 1rem;
+	font-family: 'Sorts Mill Goudy', serif;
+	color: var(--brown04);
+}
+.ttl_wrap .ttl{
+	font-size: 1.375rem;
+	font-weight: 500;
+}
+
+.btn_wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn_wrap .btn{
+	margin-right: 2rem;
+}
+.btn_wrap .btn:last-of-type{
+	margin-right: 0;
+}
+.btn{
+	position: relative;
+	background: #fff;
+	border: solid 1px var(--brown04);
+	width: 21.875rem;
+}
+.btn.brown{
+	background: var(--brown04);
+}
+.btn.line{
+	background: var(--line);
+	border: solid 1px var(--line);
+}
+.btn::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(0,1);
+	transform-origin: left top;
+	background: var(--brown04);
+	transition: .3s;
+}
+.btn.brown::before,
+.btn.line::before{
+	background: #fff;
+}
+.btn:hover::before{
+	transform: scale(1,1);
+}
+.btn a{
+	position: relative;
+	width: 100%;
+	height: 3.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--brown04);
+	font-size: 0.875rem;
+	transition: .3s;
+}
+.btn.brown a,
+.btn.line a{
+	color: #fff;
+}
+.btn a:hover{
+	color: #fff;
+}
+.btn.brown a:hover{
+	color: var(--brown04);
+}
+.btn.line a:hover{
+	color: var(--line);
+}
+.btn.line a span.icon{
+	font-size: 1.75rem;
+	margin-right: 1rem;
+}
+.btn a span.arrow{
+	position: absolute;
+	top: 50%;
+	right: 1rem;
+	transform: translateY(-50%) translateX(0);
+	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	transition: .3s .1s;
+}
+.btn a:hover span.arrow{
+	right: 0;
+}
+.btn a span.arrow .arrow_path,
+.btn a span.arrow .arrow_line{
+	transition: .3s;
+}
+.btn.brown a span.arrow .arrow_path,
+.btn.line a span.arrow .arrow_path{
+	fill: #fff;
+	stroke: #fff;
+}
+.btn.brown a span.arrow .arrow_line,
+.btn.line a span.arrow .arrow_line{
+	stroke: #fff;
+}
+.btn a:hover span.arrow .arrow_path{
+	fill: #fff;
+	stroke: #fff;
+}
+.btn a:hover span.arrow .arrow_line{
+	stroke: #fff;
+}
+.btn.brown a:hover span.arrow .arrow_path{
+	fill: var(--brown04);
+	stroke: var(--brown04);
+}
+.btn.brown a:hover span.arrow .arrow_line{
+	stroke: var(--brown04);
+}
+.btn.line a:hover span.arrow .arrow_path{
+	fill: var(--line);
+	stroke: var(--line);
+}
+.btn.line a:hover span.arrow .arrow_line{
+	stroke: var(--line);
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5rem;
+	z-index: 50000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+}
+header .logo{
+	width: 8.2rem;
+	height: auto;
+	line-height: 1;
+	margin-left: 2.125rem;
+}
+header .logo img{
+	width: 100%;
+	height: auto;
+}
+
+header nav{
+	background: #fff;
+	height: 100%;
+	padding: 0 2.875rem;
+}
+header nav ul{
+	display: flex;
+}
+header nav ul li a{
+	position: relative;
+	font-size: 0.875rem;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	padding: 0 1.4375rem;
+}
+header nav ul li a::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	transition: .3s;
+	background: var(--brown01);
+	z-index: 1;
+}
+header nav ul li a:hover::before{
+	width: 100%;
+}
+header nav ul li a span{
+	position: relative;
+	z-index: 2;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 .map{
@@ -133,6 +335,404 @@ section,
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top01 .mv{
+	position: relative;
+}
+.top01 .mv::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.35);
+}
+.top01 .txt{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+}
+.top01 .txt .txt01{
+	font-size: 1.25rem;
+	letter-spacing: 0.2rem;
+}
+.top01 .txt h2{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+}
+.top01 .txt .logo{
+	width: 10.3rem;
+	margin: 0.5rem auto 1.5rem;
+}
+.top01 .txt .txt02{
+	font-size: 1.75rem;
+	letter-spacing: 0.1rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top02{
+	padding: 6rem 0;
+}
+.top02 .box01{
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
+	box-shadow: 0 2px 20px rgba(0,0,0,.1);
+}
+.top02 .box01 h3{
+	text-align: center;
+	background: var(--brown05);
+	font-size: 1.3125rem;
+	color: #fff;
+	letter-spacing: 0.1rem;
+	padding: 0.5rem 1rem;
+}
+.top02 .box01 .txt{
+	background: #fff;
+	padding: 2rem 1rem;
+	text-align: center;
+}
+.top02 .box01 .txt .item{
+	display: inline-block;
+	margin: 0 auto 1.5rem;
+	background: rgba(92,69,24,.05);
+	border: solid 1px rgba(92,69,24,.15);
+	padding: 0.25rem 1.5rem;
+}
+.top02 .box01 .txt .item p{
+	display: inline-block;
+	font-size: 1.125rem;
+	font-weight: 700;
+}
+.top02 .box01 .txt .item p span{
+	color: #FF4C31;
+	margin-right: 1rem;
+}
+.top02 .box01 .txt ul{
+	margin: 0 2rem;
+	text-align: left;
+}
+.top02 .box01 .txt ul li{
+	list-style: disc;
+	font-size: 0.875rem;
+}
+.top02 .box02{
+	margin-top: 5.625rem;
+	background: rgba(219,203,166,.25);
+	text-align: center;
+	padding: 2.8125rem 2rem;
+}
+.top02 .box02 h3{
+	color: #FF4C31;
+	font-size: 1.75rem;
+	margin-bottom: 0.75rem;
+}
+.top02 .box02 p{
+	font-size: 1.125rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+.top02 .box02 .bnr{
+	width: 31.25rem;
+	margin: 0 auto;
+	border: solid 1px #000;
+	transition: .3s;
+}
+.top02 .box02 .bnr:hover{
+	opacity: .6;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top03{
+	padding: 0 0 6rem;
+}
+.top03 .box{
+	display: flex;
+	justify-content: space-between;
+}
+.top03 .box .item{
+	width: 30.5%;
+	background: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+.top03 .box .item .img img{
+	width: 100%;
+	height: auto;
+}
+.top03 .box .item .txt{
+	padding: 1.5rem 1.75rem;
+}
+.top03 .box .item .txt h4{
+	color: var(--brown04);
+	font-size: 1.25rem;
+	text-align: center;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.1rem;
+}
+.top03 .box .item .txt p{
+	color: #333;
+	letter-spacing: 0.05rem;
+}
+.top03 .box .item .txt p span{
+	color: #FF4C31;
+	font-weight: 700;
+	background: linear-gradient(transparent 60%, #FFEB00 60%);;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
+.top04{
+	padding: 0 0 6rem;
+}
+.top04 .ttl_wrap{
+	margin-bottom: 2.5rem;
+}
+.top04 .copy p{
+	text-align: center;
+}
+.top04 .needs{
+	width: 25rem;
+	margin: 2.5rem auto 4rem;
+}
+.top04 .item{
+	position: relative;
+	margin-top: 3.1875rem;
+}
+.top04 .item:first-of-type{
+	margin-top: 0;
+}
+.top04 .item .txt{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	border: solid 1px #fff;
+	border-top: none;
+	max-width: 1080px;
+	width: 90%;
+	height: 75%;
+	min-height: 278.5px;
+}
+.top04 .item .txt .num{
+	position: relative;
+	font-size: 1.75rem;
+	text-align: center;
+	margin-top: -1.75rem;
+}
+.top04 .item .txt .num::before,
+.top04 .item .txt .num::after{
+	position: absolute;
+	content: '';
+	top: 50%;
+	width: 47%;
+	height: 1px;
+	background: #fff;
+}
+.top04 .item .txt .num::before{
+	left: 0;
+}
+.top04 .item .txt .num::after{
+	right: 0;
+}
+.top04 .item .txt .txt_in{
+	max-width: 800px;
+	width: 90%;
+	height: 90%;
+	margin: -0.875rem auto 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.top04 .item .txt .txt_in h4{
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1rem;
+}
+.top04 .item .txt .txt_in p{
+	font-size: 1.125rem;
+	letter-spacing: 0.05rem;
+}
+
+.top04 .btn_wrap{
+	margin-top: 2.5rem;
+}
+.top04 .btn_wrap .btn{
+	box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top05{
+	padding: 0 0 7.5rem;
+}
+.top05 .box{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.top05 .box .img{
+	min-width: 300px;
+	width: 100%;
+}
+.top05 .box .txt{
+	padding-left: 3rem;
+}
+.top05 .box .txt h4{
+	font-size: 2rem;
+	line-height: 1.8;
+	color: var(--brown04);
+	margin-bottom: 2.25rem;
+	letter-spacing: 0.1rem;
+}
+.top05 .box .txt p{
+	font-size: 1.125rem;
+}
+.top05 .box02{
+	background: rgba(219,203,126,.3);
+	padding: 5.375rem 0;
+	margin-top: 5.25rem;
+}
+.top05 .box02_in{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.top05 .box02 .item{
+	width: 46.5%;
+	background: #fff;
+	margin-top: 4.125rem;
+}
+.top05 .box02 .item:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.top05 .box02 .item .img img{
+	width: 100%;
+	height: auto;
+}
+.top05 .box02 .item .txt{
+	padding: 1.5rem 2.25rem;
+}
+.top05 .box02 .item .txt h5{
+	font-size: 1.125rem;
+	color: var(--brown05);
+	margin-bottom: 1rem;
+}
+.top05 .box02 .item .txt p{
+	font-size: 0.875rem;
+}
+.top05 .box03{
+	margin-top: 5.5rem;
+	text-align: center;
+}
+.top05 .box03 p{
+	font-size: 1.375rem;
+	font-weight: 500;
+	margin-bottom: 3rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top06{
+	padding: 0 0 9rem;
+}
+.top06 .box{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.top06 .box article{
+	width: 48%;
+	margin-top: 3rem;
+}
+.top06 .box article:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.top06 .box article a .img{
+	overflow: hidden;
+}
+.top06 .box article a .img img{
+	width: 100%;
+	height: auto;
+	transition: .3s;
+}
+.top06 .box article a:hover .img img{
+	transform: scale(1.05);
+	opacity: .6;
+}
+.top06 .box article a .txt{
+	margin-top: 1.5rem;
+	transition: .3s;
+}
+.top06 .box article a:hover .txt{
+	opacity: .6;
+}
+.top06 .box article a .txt h4{
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.top06 .box article a .txt .cat{
+	width: 8.5rem;
+	padding: 0.25rem;
+}
+.top06 .box article a .txt .cat.color01{
+	background: var(--brown03);
+	color: #fff;
+}
+.top06 .box article a .txt .cat.color02{
+	background: var(--brown02);
+	color: #000;
+}
+.top06 .box article a .txt .cat.color03{
+	background: var(--brown01);
+	color: #000;
+}
+.top06 .box article a .txt time{
+	display: inline-block;
+	margin-bottom: 0.25rem;
+}
+.top06 .box article a .txt .cat p{
+	font-size: 0.7rem;
+	line-height: 1.2;
+	text-align: center;
+}
+.top06 .btn{
+	margin: 5rem auto;
+}
+.top06 .btn a{
+	letter-spacing: 0.1rem;
+}
+.top06 .bnr_wrap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.top06 .bnr_wrap a{
+	width: 49%;
+	transition: .3s;
+}
+.top06 .bnr_wrap a:first-of-type{
+	border: solid 1px #000;
+}
+.top06 .bnr_wrap a:hover{
+	opacity: .6;
+}
+.top06 .bnr_wrap a .img img{
+	width: 100%;
+	height: auto;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
