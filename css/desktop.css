@@ -152,7 +152,7 @@ main{
 	position: relative;
 	background: #fff;
 	border: solid 1px var(--brown04);
-	width: 21.875rem;
+	width: 25rem;
 }
 .btn.brown{
 	background: var(--brown04);
@@ -166,9 +166,8 @@ main{
 	content: '';
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 0;
 	height: 100%;
-	transform: scale(0,1);
 	transform-origin: left top;
 	background: var(--brown04);
 	transition: .3s;
@@ -178,7 +177,7 @@ main{
 	background: #fff;
 }
 .btn:hover::before{
-	transform: scale(1,1);
+	width: 100%;
 }
 .btn a{
 	position: relative;
@@ -256,6 +255,28 @@ main{
 .btn.line a:hover span.arrow .arrow_line{
 	stroke: var(--line);
 }
+.gmap iframe,
+.gmap object,
+.gmap embed{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.gmap{
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+.gmap iframe{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -318,22 +339,71 @@ header nav ul li a span{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-.map{
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 56.25%;
-	position: relative;
-}
-.map iframe{
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-}
-
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+footer{
+	background: var(--brown04);
+	padding: 4rem 0 3rem;
+	color: #fff;
+}
+footer a{
+	color: #fff;
+}
+footer ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer ul li{
+	margin-right: 5rem;
+	font-size: 0.875rem;
+}
+footer ul li:last-of-type{
+	margin-right: 0;
+}
+footer ul li a{
+	transition: .3s;
+}
+footer ul li a:hover{
+	color: var(--brown01);
+}
+footer ul li a span{
+	color: var(--brown01);
+	margin-right: 0.5rem;
+}
+footer .box{
+	text-align: center;
+	margin-top: 4rem;
+}
+footer .box .logo{
+	width: 5.2rem;
+	margin: 0 auto 2rem;
+}
+footer .box h2{
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 0.5rem;
+}
+footer .box .sns_wrap{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+}
+footer .box .sns_wrap a span{
+	font-size: 1.875rem;
+	margin-right: 2rem;
+	transition: .3s;
+}
+footer .box .sns_wrap a:last-of-type span{
+	margin-right: 0;
+}
+footer .box .sns_wrap a:hover span{
+	color: var(--brown01);
+}
+footer .copyright{
+	font-size: 0.875rem;
+	margin-top: 4.75rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -489,7 +559,7 @@ header nav ul li a span{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top04{
 	padding: 0 0 6rem;
 }
@@ -733,6 +803,122 @@ header nav ul li a span{
 	height: auto;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ お問い合わせ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.contact_wrap{
+	background: url(../images/common/contact_bg.png) center center /  cover no-repeat;
+	padding: 5rem 0;
+}
+.contact_wrap::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.35);
+}
+.contact_wrap .ttl_wrap,
+.contact_wrap .copy,
+.contact_wrap .btn_wrap{
+	position: relative;
+	z-index: 2;
+}
+.contact_wrap .ttl_wrap{
+	margin-bottom: 2.5rem;
+}
+.contact_wrap .ttl_wrap p,
+.contact_wrap .ttl_wrap .ttl{
+	color: #fff;
+}
+.contact_wrap .copy{
+	color: #fff;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+.contact_wrap .btn_wrap .btn{
+	box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ お問い合わせ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ07 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top07 .gmap{
+	padding-bottom: 35%;
+}
+.top07 .box{
+	position: relative;
+	padding: 4rem;
+	margin-top: -4rem;
+	background: #fff;
+	z-index: 2;
+}
+.top07 .box table{
+	width: 100%;
+}
+.top07 .box table th,
+.top07 .box table td{
+	border-bottom: solid 1px #ddd;
+}
+.top07 .box table th{
+	width: 18%;
+	padding: 2rem 0;
+	vertical-align: top;
+	text-align: left;
+	font-weight: 400;
+}
+.top07 .box table td{
+	width: 82%;
+	padding: 2rem 0 2rem 1rem;
+}
+.top07 .box .btn{
+	margin: 4rem auto 0;
+}
+.top07 .box .recruit_bnr{
+	position: relative;
+	max-width: 880px;
+	width: 100%;
+	margin: 9.625rem auto 0;
+}
+.top07 .box .recruit_bnr a .img{
+	position: relative;
+	overflow: hidden;
+}
+.top07 .box .recruit_bnr a .img::after{
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+}
+.top07 .box .recruit_bnr a .img img{
+	transition: .3s;
+}
+.top07 .box .recruit_bnr a:hover .img img{
+	transform: scale(1.05);
+}
+.top07 .box .recruit_bnr a .txt{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%) translateY(1rem);
+	z-index: 2;
+	color: #fff;
+}
+.top07 .box .recruit_bnr a .txt span{
+	display: block;
+	font-size: 1.25rem;
+}
+.top07 .box .recruit_bnr a .txt .ttl{
+	font-size: 2.375rem;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+	line-height: 1.5;
+	padding-right: 5rem;
+	border-bottom: solid 2px #fff;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ07 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
