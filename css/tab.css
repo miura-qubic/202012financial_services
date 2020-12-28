@@ -1,3 +1,33 @@
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top01 .txt .txt01{
+	font-size: 1.125rem;
+}
+.top01 .txt h2{
+	font-size: 2.5rem;
+}
+.top01 .txt .logo{
+	width: 9rem;
+	margin: 0.25rem auto 1.25rem;
+}
+.top01 .txt .txt02{
+	font-size: 1.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top03 .box .item .txt{
+	padding: 1rem 1.25rem;
+}
+.top03 .box .item .txt h4{
+	font-size: 1.125rem;
+	letter-spacing: 0;
+}
+.top03 .box .item .txt p{
+	font-size: 0.9rem;
+	letter-spacing: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ トップ04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .top04 .item .txt .txt_in h4{
 	font-size: 1.75rem;
