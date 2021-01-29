@@ -118,9 +118,6 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-main{
-	margin-top: 5rem;
-}
 .sorts_mill_goudy{
 	font-family: 'Sorts Mill Goudy', serif;
 }
@@ -415,10 +412,15 @@ header{
 	width: 100%;
 	height: 5rem;
 	z-index: 50000;
+}
+.header_in{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: #fff;
+	transition: background .3s;
+}
+.header_in.active{
+	background: rgba(255,255,255,.95);
 }
 header .logo{
 	width: 8.2rem;
@@ -432,7 +434,6 @@ header .logo img{
 }
 
 header nav{
-	background: #fff;
 	height: 100%;
 	padding: 0 2.875rem;
 }
@@ -536,7 +537,7 @@ footer .copyright{
 .top01 .mv{
 	position: relative;
 	width: 100%;
-	height: 92vh;
+	height: 100vh;
 	min-height: 700px;
 }
 .top01 .mv::before{
@@ -546,7 +547,6 @@ footer .copyright{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	/* background: rgba(0,0,0,.45); */
 	background: rgba(255,255,255,.25);
 }
 .top01 .txt{
@@ -567,13 +567,19 @@ footer .copyright{
 	font-size: 3rem;
 	letter-spacing: 0.1rem;
 }
+.top01 .txt h2 span{
+	color: var(--brown05);
+}
 .top01 .txt .logo{
 	width: 23rem;
-	margin: 0.75rem auto 1.75rem;
+	margin: 2.25rem auto 2.75rem;
 }
 .top01 .txt .txt02{
 	font-size: 1.75rem;
 	letter-spacing: 0.1rem;
+}
+.top01 .txt .txt02 span{
+	color: var(--brown05);
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
