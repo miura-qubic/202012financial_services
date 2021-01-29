@@ -98,6 +98,9 @@ section,
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ベース設定 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+main{
+	margin-top: 4.25rem;
+}
 .sorts_mill_goudy{
 	font-family: 'Sorts Mill Goudy', serif;
 }
@@ -322,9 +325,6 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	padding-right: 0.75rem;
-	transition: background .3s;
-}
-.header_in.active{
 	background: rgba(255,255,255,.95);
 }
 header::before{
@@ -569,7 +569,7 @@ footer .copyright{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%) translateY(0.5rem);
+	transform: translate(-50%,-50%) translateY(-2.5rem);
 	width: 100%;
 	text-align: center;
 	color: #000;
@@ -595,7 +595,7 @@ footer .copyright{
 .top01 .txt .txt02{
 	font-size: 1.3rem;
 	letter-spacing: 0.1rem;
-	margin-top: 6rem;
+	margin-top: 4.5rem;
 }
 .top01 .txt .txt02 span{
 	color: var(--brown05);
