@@ -32,8 +32,12 @@ $(function () {
 	});
 	
 	// フェードイン
-	$('.fadein, .fadein02, .fadein03, .fadedown01, .fadedown02, .fadedown03, .fadedown04, .fadedown05, .fadedown06, .fadeleft, .faderight, .deco, .deco02, .view').on('inview',function(){
+	$('.fadein, .fadein02, .fadein03, .fadedown01, .fadedown02, .fadedown03, .fadedown04, .fadedown05, .fadedown06, .fadeleft, .faderight, .deco, .deco02, .view, .lower_mv').on('inview',function(){
 		$(this).addClass('active');
+	});
+	// テキストアニメーション発動
+	$('.txt_anime').on('inview',function(){
+		$(this).addClass('start');
 	});
 	
 	
