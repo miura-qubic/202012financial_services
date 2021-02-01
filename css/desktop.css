@@ -990,6 +990,10 @@ footer .copyright{
 	background: var(--brown01);
 	color: #000;
 }
+.top06 .box article .txt01 .cat.color04{
+	background: var(--brown04);
+	color: #fff;
+}
 .top06 .box article .txt01 .cat p{
 	font-size: 0.7rem;
 	line-height: 1.2;
@@ -1188,7 +1192,7 @@ footer .copyright{
 }
 .lower_ttl_wrap{
 	position: absolute;
-	width: 18.75rem;
+	width: 24rem;
 	height: 9.375rem;
 	top: 50%;
 	left: 0;
@@ -1242,7 +1246,7 @@ footer .copyright{
 }
 .lower_mv .mv{
 	position: relative;
-	width: calc(100% - 18.75rem);
+	width: calc(100% - 24rem);
 	height: 23.125rem;
 	margin-left: auto;
 	z-index: 2;
@@ -1445,6 +1449,151 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ recruit03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ column02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.column02{
+	padding-bottom: 8rem;
+}
+.column02 .column02_in{
+	display: flex;
+	justify-content: space-between;
+}
+.column02 .main_contents{
+	width: calc(100% - 20rem);
+	padding-right: 2rem;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.column02 .main_contents article{
+	width: 31.5%;
+	margin-right: 2.75%;
+	margin-top: 3.5rem;
+}
+.column02 .main_contents article:nth-of-type(3n){
+	margin-right: 0;
+}
+.column02 .main_contents article:nth-of-type(-n+3){
+	margin-top: 0;
+}
+.column02 .main_contents article a .img{
+	overflow: hidden;
+}
+.column02 .main_contents article a .img img{
+	width: 100%;
+	height: auto;
+	transition: .3s;
+}
+.column02 .main_contents article a:hover .img img{
+	transform: scale(1.05);
+	opacity: .6;
+}
+.column02 .main_contents article .txt{
+	margin-top: 0.5rem;
+	transition: .3s;
+}
+.column02 .main_contents article a:hover .txt{
+	opacity: .6;
+}
+.column02 .main_contents article .txt h2{
+	font-size: 1rem;
+	font-weight: 700;
+}
+.column02 .main_contents article .txt time{
+	font-family: 'Sorts Mill Goudy', serif;
+}
+.column02 .main_contents article .txt .cat{
+	width: 8.5rem;
+	padding: 0.25rem;
+}
+.column02 .main_contents article .txt .cat.color01{
+	background: var(--brown03);
+	color: #fff;
+}
+.column02 .main_contents article .txt .cat.color02{
+	background: var(--brown02);
+	color: #000;
+}
+.column02 .main_contents article .txt .cat.color03{
+	background: var(--brown01);
+	color: #000;
+}
+.column02 .main_contents article .txt .cat.color04{
+	background: var(--brown04);
+	color: #fff;
+}
+.column02 .main_contents article .txt .cat p{
+	font-size: 0.7rem;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.column02 aside{
+	width: 20rem;
+}
+.column02 aside .bnr01 a{
+	border: solid 1px #000;
+	transition: .3s;
+}
+.column02 aside .bnr01 a:hover{
+	opacity: .6;
+}
+.column02 aside .bnr01 a img{
+	width: 100%;
+	height: auto;
+}
+.column02 aside .box01{
+	margin-top: 3rem;
+}
+.column02 aside .box01 h3{
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0.75rem;
+}
+.column02 aside .box01 article{
+	margin-top: 1.5rem;
+}
+.column02 aside .box01 article:first-of-type{
+	margin-top: 0;
+}
+.column02 aside .box01 article a{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.column02 aside .box01 article .img{
+	width: 38%;
+	overflow: hidden;
+}
+.column02 aside .box01 article a .img img{
+	transition: .3s;
+}
+.column02 aside .box01 article a:hover .img img{
+	transform: scale(1.05);
+	opacity: .6;
+}
+.column02 aside .box01 article .txt{
+	width: 58%;
+	transition: .3s;
+}
+.column02 aside .box01 article a:hover .txt{
+	opacity: .6;
+}
+.column02 aside .box01 article h4{
+	font-size: 0.8125rem;
+	line-height: 1.5;
+}
+.column02 aside .box01 a .txt time{
+	font-size: 0.75rem;
+	line-height: 1;
+}
+.column02 aside .bnr02{
+	margin-top: 3rem;
+}
+.column02 aside .bnr02 .img:first-of-type{
+	border: solid 1px #000;
+	margin-bottom: 1rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ column02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
