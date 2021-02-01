@@ -1200,7 +1200,7 @@ footer .copyright{
 	height: 0;
 	background-size: auto auto;
 	background-color: rgba(255, 255, 255, 1);
-	background-image: repeating-linear-gradient(90deg, transparent, transparent 6px, rgba(219, 203, 166, 1) 6px, rgba(219, 203, 166, 1) 8px );
+	background-image: repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(219, 203, 166, 1) 5px, rgba(219, 203, 166, 1) 7px );
 	z-index: 1;
 }
 .lower_mv.active::before{
@@ -1335,23 +1335,135 @@ footer .copyright{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ recruit02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .recruit02{
-	padding: 0 0 5rem;
+	padding: 1.5rem 0;
 }
-.recruit02 .box{
+
+.recruit02 .txt{
+	margin-bottom: 2.5rem;
+}
+.recruit02 .txt p{
+	letter-spacing: 0.05em;
+	text-align: center;
+}
+.recruit02 h2{
+	font-size: 1.4rem;
+	color: var(--brown04);
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-bottom: 1.5rem;
+}
+
+.recruit02 .box,
+.recruit03 .box{
 	background: #FAFAFA;
-	padding: 2rem 2rem 1.5rem;
-	margin: 0 -2rem 2.5rem;
+	padding: 2.5rem 2rem 3rem;
+	margin: 0 -2rem;
+}
+.recruit02 dl dt,
+.recruit02 dl dd,
+.recruit03 dl dt,
+.recruit03 dl dd{
+	display: block;
+}
+.recruit02 dl dt,
+.recruit03 dl dt{
+	font-size: 1.1rem;
+	font-weight: 700;
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 0.5rem;
+}
+.recruit02 dl dd,
+.recruit03 dl dd{
+	padding-top: 0.5rem;
+	margin-bottom: 2.25rem;
+	font-size: 0.9rem;
+}
+.recruit02 dl dd:last-of-type,
+.recruit03 dl dd:last-of-type{
+	margin-bottom: 0;
+}
+.recruit02 dl dd ul,
+.recruit03 dl dd ul{
+	margin-left: 1.5rem;
+}
+.recruit02 .box dl dd ul.mt15,
+.recruit03 .box dl dd ul.mt15{
+	margin-top: 1.25rem;
+}
+.recruit02 dl dd ul li,
+.recruit03 dl dd ul li{
+	list-style-type: disc;
+}
+.recruit02 .box dl dd p + p,
+.recruit03 .box dl dd p + p{
+	margin-top: 1.25rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ recruit02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-
-
-
-
-
-
-
-
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ recruit03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.recruit03{
+	padding: 1.5rem 0 5rem;
+}
+.recruit03 h2{
+	font-size: 1.4rem;
+	color: var(--brown04);
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.5rem;
+}
+.recruit03 .txt p{
+	text-align: center;
+}
+.recruit03 .box{
+	position: relative;
+	margin-top: 1.75rem;
+}
+.recruit03 .box .img_wrap{
+	position: absolute;
+	top: -0.75rem;
+	left: 58.5%;
+	max-width: 13rem;
+	min-width: 9rem;
+	width: 40%;
+	z-index: 2;
+}
+.recruit03 .box .img_wrap .img{
+	position: relative;
+}
+.recruit03 .box .img_wrap .img::before{
+	position: absolute;
+	content: '';
+	top: 0.4rem;
+	left: 0.4rem;
+	width: 100%;
+	height: 100%;
+	background: #DBCBA6;
+	z-index: 1;
+}
+.recruit03 .box .img img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	z-index: 2;
+}
+.recruit03 .box dl dd .txt_bold{
+	display: block;
+	font-weight: 700;
+	margin-top: 1.25rem;
+}
+.recruit03 .box .contact_btn_wrap{
+	margin-top: 3rem;
+}
+.recruit03 .box .contact_btn_wrap p{
+	font-size: 0.9rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.recruit03 .box .contact_btn_wrap .btn_wrap .btn{
+	border: none;
+	box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ recruit03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 
 

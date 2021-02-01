@@ -1340,16 +1340,11 @@ footer .copyright{
 	background: #FAFAFA;
 	padding: 4rem 4rem 4.5rem;
 }
-.recruit02 dl,
-.recruit03 dl{
-	width: 100%;
-}
 .recruit02 dl dt,
 .recruit02 dl dd,
 .recruit03 dl dt,
 .recruit03 dl dd{
 	display: block;
-	text-align: left;
 }
 .recruit02 dl dt,
 .recruit03 dl dt{
