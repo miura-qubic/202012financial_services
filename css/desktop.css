@@ -419,7 +419,7 @@ section,
 	width: 100%;
 	height: 100%;
 	background: var(--brown04);
-	transition: transform .3s cubic-bezier(.27,.98,.74,.02);
+	transition: transform .4s cubic-bezier(.27,.98,.74,.02);
 	transform: translateX(-101%);
 	z-index: 2;
 }
@@ -428,7 +428,7 @@ section,
 	background: #fff;
 }
 .txt_anime .anime02::before{
-	transition-delay: .1s;
+	transition-delay: .2s;
 }
 .txt_anime.start .anime01::before,
 .txt_anime.start .anime02::before{
@@ -437,14 +437,14 @@ section,
 .txt_anime .anime_in{
 	position: relative;
 	opacity: 0;
-	transition: opacity 0s .3s;
+	transition: opacity 0s .4s;
 	z-index: 1;
 }
 .txt_anime.start .anime_in{
 	opacity: 1;
 }
 .txt_anime.start .anime02 .anime_in{
-	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) .3s;
+	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) .4s;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1260,7 +1260,7 @@ footer .copyright{
 	background: #fff;
 }
 .breadcrumb li{
-	font-size: 0.875em;
+	font-size: 0.875rem;
 	display: inline-block;
 	list-style: none;
 }

@@ -309,6 +309,50 @@ main{
 .view05.active{ transition: .5s ease 1.4s; }
 .view06.active{ transition: .5s ease 1.7s; }
 .view07.active{ transition: 1s ease 2s; }
+
+.txt_anime .anime01,
+.txt_anime .anime02{
+	position: relative;
+	overflow: hidden;
+	line-height: 1;
+}
+.txt_anime .anime01::before,
+.txt_anime .anime02::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: var(--brown04);
+	transition: transform .4s cubic-bezier(.27,.98,.74,.02);
+	transform: translateX(-101%);
+	z-index: 2;
+}
+.txt_anime.white .anime01::before,
+.txt_anime.white .anime02::before{
+	background: #fff;
+}
+.txt_anime .anime02::before{
+	transition-delay: .2s;
+}
+.txt_anime.start .anime01::before,
+.txt_anime.start .anime02::before{
+	transform: translateX(101%);
+}
+.txt_anime .anime_in{
+	position: relative;
+	opacity: 0;
+	transition: opacity 0s .4s;
+	z-index: 1;
+}
+.txt_anime.start .anime_in{
+	opacity: 1;
+}
+.txt_anime.start .anime02 .anime_in{
+	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) .4s;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -1143,11 +1187,150 @@ footer .copyright{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ07 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
-
+.lower_mv{
+	position: relative;
+	margin-bottom: 2rem;
+}
+.lower_mv::before{
+	position: absolute;
+	content: '';
+	top: 70%;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-size: auto auto;
+	background-color: rgba(255, 255, 255, 1);
+	background-image: repeating-linear-gradient(90deg, transparent, transparent 6px, rgba(219, 203, 166, 1) 6px, rgba(219, 203, 166, 1) 8px );
+	z-index: 1;
+}
+.lower_mv.active::before{
+	height: 7rem;
+	transition: all .5s .3s ease;
+}
+.lower_ttl_wrap{
+	position: absolute;
+	width: 18.75rem;
+	height: 7.5rem;
+	bottom: 2rem;
+	left: 0;
+	background: #fff;
+	z-index: 4;
+}
+.lower_ttl_wrap_in{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding-left: 2rem;
+}
+.lower_ttl_wrap p{
+	display: inline-block;
+	font-size: 0.73rem;
+	font-family: 'Sorts Mill Goudy', serif;
+	letter-spacing: 0.05em;
+	color: var(--brown04);
+	margin-bottom: 1rem;
+}
+.lower_ttl_wrap .ttl{
+	display: inline-block;
+	font-size: 1.2rem;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
+.lower_ttl_wrap .deco{
+	width: 3.75rem;
+	height: 3.75rem;
+	top: -0.9375rem;
+	right: -0.9375rem;
+}
+.lower_ttl_wrap .deco span:nth-of-type(1){
+	width: 0.9375rem;
+	height: 0.9375rem;
+}
+.lower_ttl_wrap .deco span:nth-of-type(2){
+	width: 1.875rem;
+	height: 1.875rem;
+	top: 0.9375rem;
+	left: 0.9375rem;
+}
+.lower_ttl_wrap .deco span:nth-of-type(3){
+	width: 0.9375rem;
+	height: 0.9375rem;
+}
+.lower_mv .mv{
+	position: relative;
+	width: calc(100% - 2rem);
+	height: 17rem;
+	margin-left: auto;
+	z-index: 2;
+}
+.lower_mv .mv img{
+	object-position: 50% 100%; 
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ パンくずリスト ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.breadcrumb{
+	margin: 0;
+	padding: 0.75rem;
+	list-style: none;
+	background: #fff;
+}
+.breadcrumb li{
+	font-size: 0.7rem;
+	display: inline-block;
+	list-style: none;
+}
+.breadcrumb li::after{
+	content: '＞';
+	padding: 0 0.5em;
+}
+.breadcrumb li:last-child::after{
+	content: '';
+}
+.breadcrumb li a{
+	display: inline-block;
+	padding: 0.5rem 0;
+	color: #000;
+}
+.breadcrumb li a[href]{
+	text-decoration: underline;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ パンくずリスト ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.company02{
+	padding: 0 0 5rem;
+}
+.company02 .box{
+	background: #FAFAFA;
+	padding: 2rem 2rem 1.5rem;
+	margin: 0 -2rem 2.5rem;
+}
+.company02 table{
+	width: 100%;
+}
+.company02 table tr{
+	display: block;
+	margin-bottom: 1.25rem;
+}
+.company02 table th,
+.company02 table td{
+	display: block;
+	font-weight: 400;
+	text-align: left;
+	font-size: 0.9rem;
+}
+.company02 table th{
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 0.15rem;
+}
+.company02 table td{
+	padding-top: 0.15rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 
