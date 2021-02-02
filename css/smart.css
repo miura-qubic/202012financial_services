@@ -1270,6 +1270,37 @@ footer .copyright{
 .lower_mv .mv img{
 	object-position: 50% 100%; 
 }
+
+.pagenaition{
+	margin-top: 3.5rem;
+}
+.pagenaition ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pagenaition ul li{
+	margin-right: 1rem;
+}
+.pagenaition ul li:last-of-type{
+	margin-right: 0;
+}
+.pagenaition ul li.active span,
+.pagenaition ul li a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 0.9rem;
+}
+.pagenaition ul li.active span{
+	color: #fff;
+	background: var(--brown04);
+}
+.pagenaition ul li a{
+	background: var(--brown01);
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ パンくずリスト ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -1465,7 +1496,124 @@ footer .copyright{
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ recruit03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ column02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.column02{
+	padding-bottom: 5rem;
+}
+.column02 .main_contents_in{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.column02 .main_contents article{
+	width: 48%;
+	margin-top: 2.5rem;
+}
+.column02 .main_contents article:nth-of-type(-n+2){
+	margin-top: 0;
+}
+.column02 .main_contents article .txt01{
+	margin-bottom: 0.75rem;
+}
+.column02 .main_contents article .txt01 .cat{
+	width: 8.7rem;
+	padding: 0.25rem;
+}
+.column02 .main_contents article .txt01 .cat.color01{
+	background: var(--brown03);
+	color: #fff;
+}
+.column02 .main_contents article .txt01 .cat.color02{
+	background: var(--brown02);
+	color: #000;
+}
+.column02 .main_contents article .txt01 .cat.color03{
+	background: var(--brown01);
+	color: #000;
+}
+.column02 .main_contents article .txt01 .cat.color04{
+	background: var(--brown04);
+	color: #fff;
+}
+.column02 .main_contents article .txt01 .cat p{
+	font-size: 0.7rem;
+	line-height: 1.2;
+	text-align: center;
+}
+.column02 .main_contents article a .img img{
+	width: 100%;
+	height: auto;
+}
+.column02 .main_contents article .txt02{
+	margin-top: 0.25rem;
+}
+.column02 .main_contents article .txt02 h2{
+	font-size: 0.9rem;
+	font-weight: 700;
+	line-height: 1.5;
+}
 
+.column02 aside{
+	margin-top: 3.5rem;
+	padding-top: 3rem;
+	border-top: solid 1px #000;
+}
+.column02 aside .bnr01 a{
+	border: solid 1px #000;
+}
+.column02 aside .bnr01 a img{
+	width: 100%;
+	height: auto;
+}
+.column02 aside .box01{
+	margin-top: 2rem;
+}
+.column02 aside .box01 h3{
+	width: 100%;
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+.column02 aside .box01 article{
+	margin-top: 1rem;
+}
+.column02 aside .box01 article:first-of-type{
+	margin-top: 0;
+}
+.column02 aside .box01 article a{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.column02 aside .box01 article .img{
+	width: 35%;
+	overflow: hidden;
+}
+.column02 aside .box01 article a .img img{
+	width: 100%;
+	height: auto;
+}
+.column02 aside .box01 article .txt{
+	width: 61%;
+}
+.column02 aside .box01 a .txt time{
+	display: block;
+	font-size: 0.8rem;
+	line-height: 1;
+	margin-bottom: 0.5rem;
+}
+.column02 aside .box01 article h4{
+	font-size: 0.8125rem;
+	line-height: 1.5;
+}
+.column02 aside .bnr02{
+	margin-top: 2.5rem;
+}
+.column02 aside .bnr02 .img:first-of-type{
+	border: solid 1px #000;
+	margin-bottom: 1rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ column02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
