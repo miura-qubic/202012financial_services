@@ -446,6 +446,32 @@ section,
 .txt_anime.start .anime02 .anime_in{
 	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) .4s;
 }
+
+.cat{
+	width: 8.5rem;
+	padding: 0.25rem;
+}
+.cat.color01{
+	background: var(--brown03);
+	color: #fff;
+}
+.cat.color02{
+	background: var(--brown02);
+	color: #000;
+}
+.cat.color03{
+	background: var(--brown01);
+	color: #000;
+}
+.cat.color04{
+	background: var(--brown04);
+	color: #fff;
+}
+.cat p{
+	font-size: 0.7rem;
+	line-height: 1.2;
+	text-align: center;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -974,31 +1000,6 @@ footer .copyright{
 	display: inline-block;
 	margin-bottom: 0.25rem;
 }
-.top06 .box article .txt01 .cat{
-	width: 8.5rem;
-	padding: 0.25rem;
-}
-.top06 .box article .txt01 .cat.color01{
-	background: var(--brown03);
-	color: #fff;
-}
-.top06 .box article .txt01 .cat.color02{
-	background: var(--brown02);
-	color: #000;
-}
-.top06 .box article .txt01 .cat.color03{
-	background: var(--brown01);
-	color: #000;
-}
-.top06 .box article .txt01 .cat.color04{
-	background: var(--brown04);
-	color: #fff;
-}
-.top06 .box article .txt01 .cat p{
-	font-size: 0.7rem;
-	line-height: 1.2;
-	text-align: center;
-}
 .top06 .box article a .img{
 	overflow: hidden;
 }
@@ -1210,7 +1211,7 @@ footer .copyright{
 	justify-content: center;
 	padding-left: 5rem;
 }
-.lower_ttl_wrap p{
+.lower_ttl_wrap .txt01{
 	display: inline-block;
 	font-size: 0.875rem;
 	font-family: 'Sorts Mill Goudy', serif;
@@ -1514,31 +1515,6 @@ footer .copyright{
 .column02 .main_contents article .txt01{
 	margin-bottom: 1rem;
 }
-.column02 .main_contents article .txt01 .cat{
-	width: 8.5rem;
-	padding: 0.25rem;
-}
-.column02 .main_contents article .txt01 .cat.color01{
-	background: var(--brown03);
-	color: #fff;
-}
-.column02 .main_contents article .txt01 .cat.color02{
-	background: var(--brown02);
-	color: #000;
-}
-.column02 .main_contents article .txt01 .cat.color03{
-	background: var(--brown01);
-	color: #000;
-}
-.column02 .main_contents article .txt01 .cat.color04{
-	background: var(--brown04);
-	color: #fff;
-}
-.column02 .main_contents article .txt01 .cat p{
-	font-size: 0.7rem;
-	line-height: 1.2;
-	text-align: center;
-}
 .column02 .main_contents article a .img{
 	overflow: hidden;
 }
@@ -1634,6 +1610,88 @@ footer .copyright{
 	margin-bottom: 1rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ column02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ コラム・セミナー情報 記事詳細 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.article_area{
+	width: calc(100% - 20rem);
+	padding-right: 2rem;
+}
+.article_area_in{
+	background: #FAFAFA;
+	padding: 3.5rem 3rem 6rem;
+	box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+.article_area_in .ttl_area{
+	display: flex;
+	margin-bottom: 3rem;
+	padding-bottom: 3rem;
+	border-bottom: solid 1px #ddd;
+}
+.article_area_in .ttl_area .txt{
+	width: 65%;
+	padding-right: 2rem;
+}
+.article_area_in .ttl_area .txt time{
+	font-size: 1.25rem;
+}
+.article_area_in .ttl_area .txt h1{
+	font-size: 1.75rem;
+	line-height: 1.8;
+	margin-top: 1rem;
+}
+.article_area_in .ttl_area .main_ing{
+	width: 35%;
+}
+.article_area_in .contents h2{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 4rem 0 1rem;
+	padding: 0.75rem 1.5rem;
+	border-left: 10px solid var(--brown02);
+	background:  rgba(219,203,166,.6);
+}
+.article_area_in .contents h3{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 4rem 0 1rem;
+	padding: 0.75rem 1.5rem;
+	border-left: 10px solid var(--brown02);
+}
+.article_area_in .contents h4{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 4rem 0 1rem;
+}
+.article_area_in .contents p + p,
+.article_area_in .contents p + ul,
+.article_area_in .contents ul + p,
+.article_area_in .contents ol + ul,
+.article_area_in .contents ul + ol,
+.article_area_in .contents ul + ul,
+.article_area_in .contents ol + ol{
+	margin-top: 1.5rem;
+}
+.article_area_in .contents a{
+	display: inline;
+	color: var(--brown04);
+	text-decoration: underline;
+	transition: .3s;
+}
+.article_area_in .contents a:hover{
+	opacity: .6;
+}
+.article_area_in .contents ul,
+.article_area_in .contents ol{
+	margin-left: 2rem;
+}
+.article_area_in .contents ul li{
+	list-style: disc;
+}
+.article_area_in .contents ol li{
+	list-style: decimal;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ コラム・セミナー情報 記事詳細 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ IE対策 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 @media all and (-ms-high-contrast: none) {
