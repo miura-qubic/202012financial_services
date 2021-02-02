@@ -356,7 +356,7 @@ main{
 
 .cat{
 	width: 8.7rem;
-	padding: 0.25rem;
+	margin: 0;
 }
 .cat.color01{
 	background: var(--brown03);
@@ -378,6 +378,8 @@ main{
 	font-size: 0.7rem;
 	line-height: 1.2;
 	text-align: center;
+	padding: 0.25rem!important;
+	margin: 0!important;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1596,6 +1598,97 @@ footer .copyright{
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ column02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ コラム・セミナー情報 記事詳細 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.article_area_in{
+	background: #FAFAFA;
+	margin: 0 -1rem;
+	padding: 2rem 2rem 4rem;
+	box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+.article_area .ttl_area{
+	margin-bottom: 1.5rem;
+	padding-bottom: 2rem;
+	border-bottom: solid 1px #ddd;
+}
+.article_area .ttl_area .txt{
+	margin-bottom: 0.5rem;
+}
+.article_area .ttl_area .txt h1{
+	font-size: 1.4rem;
+	line-height: 1.8;
+	margin-top: 0.5rem;
+}
+.article_area .ttl_area .main_img img{
+	width: 100%;
+	height: auto;
+}
+.post_area p{
+	margin: 1.5rem 0;
+}
+.post_area h2{
+	font-size: 1.5rem;
+	margin: 3rem 0 1.5rem;
+	padding: 0.5rem 1.25rem;
+	border-left: 5px solid var(--brown02);
+	background: rgba(219,203,166,.6);
+}
+.post_area h3{
+	font-size: 1.3rem;
+	margin: 2rem 0;
+	padding: 0.5rem 1.25rem;
+	border-left:  5px solid var(--brown02);
+}
+.post_area h4{
+	font-size: 1.2rem;
+	margin: 3rem 0 1.5rem;
+}
+.post_area h5{
+	font-size: 1.1rem;
+	margin: 1rem 0;
+}
+.post_area h6{
+	font-size: 1rem;
+	margin: 1rem 0;
+}
+.post_area ul,
+.post_area ol{
+	margin: 1rem 0 1rem 1.5rem;
+}
+.post_area ul.blocks-gallery-grid{
+	margin: 2rem 0 0;
+}
+.post_area ul li{
+	list-style: disc;
+}
+.post_area ol li{
+	list-style: decimal;
+}
+.post_area strong{
+	font-weight: bold;
+}
+.post_area blockquote{
+	background: #eee;
+	padding: 1rem;
+	position: relative;
+}
+.post_area blockquote::before{
+	position: absolute;
+	top:0;
+	left:0;
+	content: '“';
+	font-size: 2rem;
+}
+.post_area a{
+	display: inline;
+	color: var(--brown04);
+	text-decoration: underline;
+}
+.post_area img{
+	width:auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 2rem auto 1.5rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ コラム・セミナー情報 記事詳細 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ プライバシーポリシー01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -1637,6 +1730,38 @@ footer .copyright{
 	text-align: right;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ プライバシーポリシー01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 問い合わせ01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.wpcf7{position: relative;}
+.ajax-loader{
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translate(-50%, -50%);
+}
+span.wpcf7-not-valid-tip{
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+  font-size: 12px;
+}
+.your_msg span.wpcf7-not-valid-tip{
+  bottom: -15px;
+}
+div.wpcf7-response-output{
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #f00;
+	font-size: 12px;
+	white-space: nowrap;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 問い合わせ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 @media screen and (orientation:portrait) {/* 縦向き */}
 @media screen and (orientation:landscape) {/* 横向き */}

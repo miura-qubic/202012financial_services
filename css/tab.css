@@ -74,7 +74,7 @@
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ column02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .column02 .main_contents{
-	width: calc(100% - 18rem);
+	width: calc(100% - 16rem);
 	padding-right: 1.5rem;
 }
 .column02 .main_contents article{
@@ -94,6 +94,24 @@
 	margin-top: 0;
 }
 .column02 aside{
-	width: 18rem;
+	width: 16rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ column02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ コラム・セミナー情報 記事詳細 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.article_area{
+	width: calc(100% - 16rem);
+	padding-right: 1.5rem;
+}
+.article_area .ttl_area .txt{
+	width: 100%;
+	padding-right: 0;
+	margin-bottom: 1rem;
+}
+.article_area .ttl_area .txt h1{
+	font-size: 1.65rem;
+}
+.article_area .ttl_area .main_img{
+	width: 100%;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ コラム・セミナー情報 記事詳細 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
