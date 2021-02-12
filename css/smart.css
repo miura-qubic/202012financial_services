@@ -320,14 +320,13 @@ main{
 .txt_anime .anime02::before{
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: -101%;
 	display: block;
 	content: '';
 	width: 100%;
 	height: 100%;
 	background: var(--brown04);
-	transition: transform .4s cubic-bezier(.27,.98,.74,.02);
-	transform: translateX(-101%);
+	transition: .5s cubic-bezier(.27,.98,.74,.02);
 	z-index: 2;
 }
 .txt_anime.white .anime01::before,
@@ -339,19 +338,19 @@ main{
 }
 .txt_anime.start .anime01::before,
 .txt_anime.start .anime02::before{
-	transform: translateX(101%);
+	left: 101%;
 }
 .txt_anime .anime_in{
 	position: relative;
-	opacity: 0;
-	transition: opacity 0s .4s;
+	left: -101%;
+	transition: 0s cubic-bezier(.27,.98,.74,.02) .5s;
 	z-index: 1;
 }
 .txt_anime.start .anime_in{
-	opacity: 1;
+	left: 0;
 }
 .txt_anime.start .anime02 .anime_in{
-	transition: opacity 0s cubic-bezier(.27,.98,.74,.02) .4s;
+	transition: 0s cubic-bezier(.27,.98,.74,.02) .7s;
 }
 
 .cat{
@@ -397,6 +396,7 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	background: rgba(255,255,255,.95);
+	padding-right: 0.75rem;
 }
 header::before{
 	position: absolute;
@@ -495,7 +495,7 @@ header .line_links{
 	font-size: 2.25rem;
 	color: var(--brown04);
 	text-align: center;
-	padding: 0 1.5rem;
+	padding: 0 0.75rem;
 	height: 4.25rem;
 	display: flex;
 	flex-direction: column;
