@@ -128,7 +128,7 @@ section,
 .ttl_wrap p{
 	font-size: 1rem;
 	font-family: 'Sorts Mill Goudy', serif;
-	color: var(--brown04);
+	color: #946C2B;
 }
 .ttl_wrap .ttl{
 	font-size: 1.375rem;
@@ -149,15 +149,15 @@ section,
 .btn{
 	position: relative;
 	background: #fff;
-	border: solid 1px var(--brown04);
+	border: solid 1px #946C2B;
 	width: 21.875rem;
 }
 .btn.brown{
-	background: var(--brown04);
+	background: #946C2B;
 }
 .btn.line{
-	background: var(--line);
-	border: solid 1px var(--line);
+	background: #00B900;
+	border: solid 1px #00B900;
 }
 .btn::before{
 	position: absolute;
@@ -167,7 +167,7 @@ section,
 	width: 0;
 	height: 100%;
 	transform-origin: left top;
-	background: var(--brown04);
+	background: #946C2B;
 	transition: .3s;
 }
 .btn.brown::before,
@@ -184,7 +184,7 @@ section,
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--brown04);
+	color: #946C2B;
 	font-size: 0.875rem;
 	transition: .3s;
 }
@@ -196,10 +196,10 @@ section,
 	color: #fff;
 }
 .btn.brown a:hover{
-	color: var(--brown04);
+	color: #946C2B;
 }
 .btn.line a:hover{
-	color: var(--line);
+	color: #00B900;
 }
 .btn.line a span.icon{
 	font-size: 1.75rem;
@@ -240,18 +240,18 @@ section,
 	stroke: #fff;
 }
 .btn.brown a:hover span.arrow .arrow_path{
-	fill: var(--brown04);
-	stroke: var(--brown04);
+	fill: #946C2B;
+	stroke: #946C2B;
 }
 .btn.brown a:hover span.arrow .arrow_line{
-	stroke: var(--brown04);
+	stroke: #946C2B;
 }
 .btn.line a:hover span.arrow .arrow_path{
-	fill: var(--line);
-	stroke: var(--line);
+	fill: #00B900;
+	stroke: #00B900;
 }
 .btn.line a:hover span.arrow .arrow_line{
-	stroke: var(--line);
+	stroke: #00B900;
 }
 .gmap iframe,
 .gmap object,
@@ -321,7 +321,7 @@ section,
 .deco span,
 .deco02 span{
 	position: absolute;
-	background: var(--brown04);
+	background: #946C2B;
 	display: block;
 	opacity: 0;
 }
@@ -418,7 +418,7 @@ section,
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: var(--brown04);
+	background: #946C2B;
 	transition: .5s cubic-bezier(.27,.98,.74,.02);
 	z-index: 2;
 }
@@ -451,19 +451,19 @@ section,
 	width: 8.5rem;
 }
 .cat.color01{
-	background: var(--brown03);
+	background: #B09538;
 	color: #fff;
 }
 .cat.color02{
-	background: var(--brown02);
+	background: #D0B174;
 	color: #000;
 }
 .cat.color03{
-	background: var(--brown01);
+	background: #DBCBA6;
 	color: #000;
 }
 .cat.color04{
-	background: var(--brown04);
+	background: #946C2B;
 	color: #fff;
 }
 .cat p{
@@ -527,7 +527,7 @@ header nav ul li a::before{
 	width: 0;
 	height: 100%;
 	transition: .3s;
-	background: var(--brown01);
+	background: #DBCBA6;
 	z-index: 1;
 }
 header nav ul li a:hover::before{
@@ -541,7 +541,7 @@ header nav ul li a span{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 footer{
-	background: var(--brown04);
+	background: #946C2B;
 	padding: 4rem 0 3rem;
 	color: #fff;
 }
@@ -562,10 +562,10 @@ footer ul li a{
 	transition: .3s;
 }
 footer ul li a:hover{
-	color: var(--brown01);
+	color: #DBCBA6;
 }
 footer ul li a span{
-	color: var(--brown01);
+	color: #DBCBA6;
 	margin-right: 0.5rem;
 }
 footer .box{
@@ -596,7 +596,7 @@ footer .box .sns_wrap a:last-of-type span{
 	margin-right: 0;
 }
 footer .box .sns_wrap a:hover span{
-	color: var(--brown01);
+	color: #DBCBA6;
 }
 footer .copyright{
 	font-size: 0.875rem;
@@ -639,7 +639,7 @@ footer .copyright{
 	letter-spacing: 0.1rem;
 }
 .top01 .txt h2 span{
-	color: var(--brown05);
+	color: #5D3B00;
 }
 .top01 .txt .logo{
 	width: 23rem;
@@ -650,7 +650,7 @@ footer .copyright{
 	letter-spacing: 0.1rem;
 }
 .top01 .txt .txt02 span{
-	color: var(--brown05);
+	color: #5D3B00;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -666,7 +666,7 @@ footer .copyright{
 }
 .top02 .box01 h3{
 	text-align: center;
-	background: var(--brown05);
+	background: #5D3B00;
 	font-size: 1.3125rem;
 	color: #fff;
 	letter-spacing: 0.1rem;
@@ -750,7 +750,7 @@ footer .copyright{
 	padding: 1.5rem 1.75rem;
 }
 .top03 .box .item .txt h4{
-	color: var(--brown04);
+	color: #946C2B;
 	font-size: 1.25rem;
 	text-align: center;
 	margin-bottom: 0.5rem;
@@ -885,7 +885,7 @@ footer .copyright{
 .top05 .box .txt h4{
 	font-size: 2rem;
 	line-height: 1.8;
-	color: var(--brown04);
+	color: #946C2B;
 	margin-bottom: 2.25rem;
 	letter-spacing: 0.1rem;
 }
@@ -928,7 +928,7 @@ footer .copyright{
 }
 .top05 .box02 .item .txt h5{
 	font-size: 1.125rem;
-	color: var(--brown05);
+	color: #5D3B00;
 	margin-bottom: 1rem;
 }
 .top05 .box02 .item .txt p{
@@ -962,19 +962,19 @@ footer .copyright{
 	padding: 0.25rem;
 }
 .top06 .cat_wrap .cat.color01{
-	background: var(--brown03);
+	background: #B09538;
 	color: #fff;
 }
 .top06 .cat_wrap .cat.color02{
-	background: var(--brown02);
+	background: #D0B174;
 	color: #000;
 }
 .top06 .cat_wrap .cat.color03{
-	background: var(--brown01);
+	background: #DBCBA6;
 	color: #000;
 }
 .top06 .cat_wrap .cat.color04{
-	background: var(--brown04);
+	background: #946C2B;
 	color: #fff;
 }
 .top06 .cat_wrap .cat p{
@@ -1217,7 +1217,7 @@ footer .copyright{
 	font-size: 0.875rem;
 	font-family: 'Sorts Mill Goudy', serif;
 	letter-spacing: 0.05em;
-	color: var(--brown04);
+	color: #946C2B;
 	margin-bottom: 1rem;
 }
 .lower_ttl_wrap .ttl{
@@ -1281,14 +1281,14 @@ footer .copyright{
 }
 .pagenaition ul li.active span{
 	color: #fff;
-	background: var(--brown04);
+	background: #946C2B;
 }
 .pagenaition ul li a{
-	background: var(--brown01);
+	background: #DBCBA6;
 	transition: .3s;
 }
 .pagenaition ul li a:hover{
-	background: var(--brown02);
+	background: #D0B174;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1321,7 +1321,7 @@ footer .copyright{
 	text-decoration: underline;
 }
 .breadcrumb li a[href]:hover{
-	color: var(--brown03);
+	color: #B09538;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ パンくずリスト ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1369,7 +1369,7 @@ footer .copyright{
 }
 .recruit02 h2{
 	font-size: 2rem;
-	color: var(--brown04);
+	color: #946C2B;
 	text-align: center;
 	letter-spacing: 0.05em;
 	margin-bottom: 2rem;
@@ -1426,7 +1426,7 @@ footer .copyright{
 }
 .recruit03 h2{
 	font-size: 2rem;
-	color: var(--brown04);
+	color: #946C2B;
 	text-align: center;
 	letter-spacing: 0.05em;
 	margin-bottom: 0.5rem;
@@ -1655,14 +1655,14 @@ footer .copyright{
 	font-size: 1.5rem;
 	margin: 4rem 0 1.5rem;
 	padding: 0.75rem 1.5rem;
-	border-left: 8px solid var(--brown02);
+	border-left: 8px solid #D0B174;
 	background: rgba(219,203,166,.6);
 }
 .post_area h3{
 	font-size: 1.3rem;
 	margin: 4rem 0 1.5rem;
 	padding: 0.75rem 1.5rem;
-	border-left: 8px solid var(--brown02);
+	border-left: 8px solid #D0B174;
 }
 .post_area h4{
 	font-size: 1.2rem;
@@ -1706,7 +1706,7 @@ footer .copyright{
 }
 .post_area a{
 	display: inline;
-	color: var(--brown04);
+	color: #946C2B;
 	text-decoration: underline;
 	transition: .3s;
 }

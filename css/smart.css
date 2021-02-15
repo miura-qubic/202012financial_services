@@ -111,7 +111,7 @@ main{
 .ttl_wrap p{
 	font-size: 1rem;
 	font-family: 'Sorts Mill Goudy', serif;
-	color: var(--brown04);
+	color: #946C2B;
 }
 .ttl_wrap .ttl{
 	font-size: 1.375rem;
@@ -127,16 +127,16 @@ main{
 .btn{
 	position: relative;
 	background: #fff;
-	border: solid 1px var(--brown04);
+	border: solid 1px #946C2B;
 	width: 20rem;
 	margin: 0 auto;
 }
 .btn.brown{
-	background: var(--brown04);
+	background: #946C2B;
 }
 .btn.line{
-	background: var(--line);
-	border: solid 1px var(--line);
+	background: #00B900;
+	border: solid 1px #00B900;
 }
 .btn a{
 	position: relative;
@@ -145,7 +145,7 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--brown04);
+	color: #946C2B;
 	font-size: 0.875rem;
 }
 .btn.brown a,
@@ -229,7 +229,7 @@ main{
 .deco span,
 .deco02 span{
 	position: absolute;
-	background: var(--brown04);
+	background: #946C2B;
 	display: block;
 	opacity: 0;
 }
@@ -325,7 +325,7 @@ main{
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: var(--brown04);
+	background: #946C2B;
 	transition: .5s cubic-bezier(.27,.98,.74,.02);
 	z-index: 2;
 }
@@ -358,19 +358,19 @@ main{
 	margin: 0;
 }
 .cat.color01{
-	background: var(--brown03);
+	background: #B09538;
 	color: #fff;
 }
 .cat.color02{
-	background: var(--brown02);
+	background: #D0B174;
 	color: #000;
 }
 .cat.color03{
-	background: var(--brown01);
+	background: #DBCBA6;
 	color: #000;
 }
 .cat.color04{
-	background: var(--brown04);
+	background: #946C2B;
 	color: #fff;
 }
 .cat p{
@@ -433,7 +433,7 @@ header nav{
 	height: calc(100vh - 4rem);
 	min-height: 550px;
 	padding: 4rem 2rem 8rem;
-	border-top: solid 3px var(--brown03);
+	border-top: solid 3px #B09538;
 	transition: .3s ease-out .2s;
 	overflow-y: scroll;
 }
@@ -493,7 +493,7 @@ header .line_links{
 	position: relative;
 	margin-left: auto;
 	font-size: 2.1rem;
-	color: var(--brown03);
+	color: #B09538;
 	text-align: center;
 	padding: 0 0.5rem;
 	height: 4.25rem;
@@ -546,14 +546,14 @@ header .bnr_wrap .img:first-of-type{
 	transform: translateX(-50%) translateY(0.2rem);
 	font-size: 0.7rem;
 	font-weight: 700;
-	color: var(--brown03);
+	color: #B09538;
 	white-space: nowrap;
 }
 .menu_open span{
 	position: absolute;
 	top:50%;
 	left:50%;
-	background: var(--brown03);
+	background: #B09538;
 	width: 60%;
 	height: 3px;
 	transition: .3s;
@@ -568,7 +568,7 @@ header .bnr_wrap .img:first-of-type{
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 footer{
-	background: var(--brown04);
+	background: #946C2B;
 	padding: 2rem 0 2.5rem;
 	color: #fff;
 }
@@ -595,7 +595,7 @@ footer ul li a{
 	padding: 0.25rem 0;
 }
 footer ul li a span{
-	color: var(--brown01);
+	color: #DBCBA6;
 	margin-right: 0.5rem;
 }
 footer .box{
@@ -670,7 +670,7 @@ footer .copyright{
 	letter-spacing: 0.1rem;
 }
 .top01 .txt h2 span{
-	color: var(--brown05);
+	color: #5D3B00;
 }
 .top01 .txt .logo{
 	width: 13rem;
@@ -682,7 +682,7 @@ footer .copyright{
 	margin-top: 4.5rem;
 }
 .top01 .txt .txt02 span{
-	color: var(--brown05);
+	color: #5D3B00;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ トップ01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -697,7 +697,7 @@ footer .copyright{
 }
 .top02 .box01 h3{
 	text-align: center;
-	background: var(--brown05);
+	background: #5D3B00;
 	font-size: 1rem;
 	color: #fff;
 	letter-spacing: 0.1rem;
@@ -779,7 +779,7 @@ footer .copyright{
 	padding: 1.5rem;
 }
 .top03 .box .item .txt h4{
-	color: var(--brown04);
+	color: #946C2B;
 	font-size: 1.125rem;
 	text-align: center;
 	margin-bottom: 0.5rem;
@@ -908,7 +908,7 @@ footer .copyright{
 .top05 .box .txt h4{
 	font-size: 1.2rem;
 	line-height: 1.8;
-	color: var(--brown04);
+	color: #946C2B;
 	margin-bottom: 2rem;
 	letter-spacing: 0.05rem;
 }
@@ -961,7 +961,7 @@ footer .copyright{
 }
 .top05 .box02 .item .txt h5{
 	font-size: 1.2rem;
-	color: var(--brown05);
+	color: #5D3B00;
 	text-align: center;
 	margin-bottom: 0.75rem;
 }
@@ -1001,19 +1001,19 @@ footer .copyright{
 	margin-top: 0;
 }
 .top06 .cat_wrap .cat.color01{
-	background: var(--brown03);
+	background: #B09538;
 	color: #fff;
 }
 .top06 .cat_wrap .cat.color02{
-	background: var(--brown02);
+	background: #D0B174;
 	color: #000;
 }
 .top06 .cat_wrap .cat.color03{
-	background: var(--brown01);
+	background: #DBCBA6;
 	color: #000;
 }
 .top06 .cat_wrap .cat.color04{
-	background: var(--brown04);
+	background: #946C2B;
 	color: #fff;
 }
 .top06 .cat_wrap .cat p{
@@ -1240,7 +1240,7 @@ footer .copyright{
 	font-size: 0.73rem;
 	font-family: 'Sorts Mill Goudy', serif;
 	letter-spacing: 0.05em;
-	color: var(--brown04);
+	color: #946C2B;
 	margin-bottom: 1rem;
 }
 .lower_ttl_wrap .ttl{
@@ -1305,10 +1305,10 @@ footer .copyright{
 }
 .pagenaition ul li.active span{
 	color: #fff;
-	background: var(--brown04);
+	background: #946C2B;
 }
 .pagenaition ul li a{
-	background: var(--brown01);
+	background: #DBCBA6;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1387,7 +1387,7 @@ footer .copyright{
 }
 .recruit02 h2{
 	font-size: 1.4rem;
-	color: var(--brown04);
+	color: #946C2B;
 	text-align: center;
 	letter-spacing: 0.05em;
 	margin-bottom: 1.5rem;
@@ -1446,7 +1446,7 @@ footer .copyright{
 }
 .recruit03 h2{
 	font-size: 1.4rem;
-	color: var(--brown04);
+	color: #946C2B;
 	text-align: center;
 	letter-spacing: 0.05em;
 	margin-bottom: 0.5rem;
@@ -1630,14 +1630,14 @@ footer .copyright{
 	font-size: 1.5rem;
 	margin: 3rem 0 1.5rem;
 	padding: 0.5rem 1.25rem;
-	border-left: 5px solid var(--brown02);
+	border-left: 5px solid #D0B174;
 	background: rgba(219,203,166,.6);
 }
 .post_area h3{
 	font-size: 1.3rem;
 	margin: 2rem 0;
 	padding: 0.5rem 1.25rem;
-	border-left:  5px solid var(--brown02);
+	border-left:  5px solid #D0B174;
 }
 .post_area h4{
 	font-size: 1.2rem;
@@ -1681,7 +1681,7 @@ footer .copyright{
 }
 .post_area a{
 	display: inline;
-	color: var(--brown04);
+	color: #946C2B;
 	text-decoration: underline;
 }
 .post_area img{
